@@ -1,0 +1,6 @@
+﻿addDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ main.php [L,QSA]
