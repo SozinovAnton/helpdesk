@@ -3,8 +3,20 @@
     ini_set('max_execution_time', 120);
     include_once('conf.php');
 
+    function getFilePath($zipPath) {
+        $tmp = preg_match_all('/([A-Z][a-z]+)/', $zipPath, $unzipPath, PREG_PATTERN_ORDER);
+        
+        if (isset($unzipPath[0][1])){
+            $filePath = mb_strtolower($unzipPath[0][0] . '/' . $unzipPath[0][1] . '.php');
+        } else {
+            $filePath = $unzipPath[0][0] . '.php';
+        }
+        return $filePath;
+    }
+
     function autoload($class) {
-        $class = str_replace('_','/',$class) . '.php';
+        $class = getFilePath($class);
+        
         if (file_exists($class)) {
             include_once($class);
         }
