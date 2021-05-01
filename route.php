@@ -1,4 +1,3 @@
-<pre>
 <?php
     class Route {
         private static $patterns = array (
@@ -23,4 +22,3 @@
         }
     }
 ?>
-</pre>
