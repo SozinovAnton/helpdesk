@@ -1,4 +1,24 @@
 /*!
+ * helpdesk.css
  * Sozinov Anton
  * Copyright 2021
  */
+
+.hdesk-bg {
+    background-color: #8fd6a4 !important;
+}
+
+.hdesk-task-block {
+    background-color: red;
+    padding: 4px;
+    margin-top: 8px;
+    height: 64px;
+}
+
+.hdesk-task-block .row {
+    margin: inherit;
+    margin-left: 4px;
+    margin-right: 4px;
+    background-color: green;
+    height: 40px;
+}

@@ -26,7 +26,9 @@
         }
 
         protected function menu() {
-            //
+            $this->contentBlock = [
+                'task/block' => []
+            ];
         }
     }
 ?>

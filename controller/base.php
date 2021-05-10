@@ -3,7 +3,7 @@
         protected static $instance;
         protected $title;
         protected $contentBlock = [];
-        protected $css = [CSS . 'bootstrap.css']; //CSS . 'style.css', , CSS . 'table.css', CSS . 'button.css', 
+        protected $css = [CSS . 'bootstrap.css', CSS . 'helpdesk.css']; //CSS . 'style.css', , CSS . 'table.css', CSS . 'button.css', 
         protected $js = [JS . 'bootstrap.js'];
         
         abstract function prepareContent($method);
